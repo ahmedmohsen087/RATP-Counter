@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import 'data-tiime.dart';
+
 class HomePage extends StatefulWidget {
 
 
@@ -117,11 +119,15 @@ class _HomePageState extends State<HomePage> {
       });
     });
     clear();
-
+   setState(() {
+     DateTime;
+   });
   }
 
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -191,7 +197,7 @@ class _HomePageState extends State<HomePage> {
                     )),
                     SizedBox(width: 20,),
                     SizedBox(
-                      width: 40,
+                      width: 50,
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         controller: MyController1 ,
@@ -245,7 +251,7 @@ class _HomePageState extends State<HomePage> {
                     )),
                     SizedBox(width: 20,),
                     SizedBox(
-                      width: 40,
+                      width: 50,
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         controller: MyController2,
@@ -297,7 +303,7 @@ class _HomePageState extends State<HomePage> {
                     )),
                     SizedBox(width: 20,),
                     SizedBox(
-                      width: 40,
+                      width: 50,
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         controller: MyController3,
@@ -348,7 +354,7 @@ class _HomePageState extends State<HomePage> {
                     )),
                     SizedBox(width: 20,),
                     SizedBox(
-                      width: 40,
+                      width: 50,
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         controller: MyController4,
@@ -399,7 +405,7 @@ class _HomePageState extends State<HomePage> {
                     )),
                     SizedBox(width: 20,),
                     SizedBox(
-                      width: 40,
+                      width: 50,
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         controller: MyController5,
@@ -450,7 +456,7 @@ class _HomePageState extends State<HomePage> {
                     )),
                     SizedBox(width: 20,),
                     SizedBox(
-                      width: 40,
+                      width: 50,
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         controller: MyController6,
@@ -501,7 +507,7 @@ class _HomePageState extends State<HomePage> {
                     )),
                     SizedBox(width: 20,),
                     SizedBox(
-                      width: 40,
+                      width: 50,
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         controller: MyController7,
@@ -548,6 +554,15 @@ class _HomePageState extends State<HomePage> {
                    )),
                  )
                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(width: 10,),
+                  DataTime(),
+                  SizedBox(width: 10,),
+
+                ],
               )
 
             ],
